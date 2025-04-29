@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>IMFINETEST</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- 헤더,이름 -->
+    <header>
+      <h3 id="username">아이엠파인 SD팀 지원자 조선아</h3>
+    </header>
+
+    <!-- 1. 그래프-->
+    <section id="graph-section">
+      <h4>1. 그래프</h4>
+      <canvas id="graphCanvas" width="600" height="300"></canvas>
+    </section>
+
+    <!-- 2. 값 편집 -->
+    <section id="table-section">
+      <h4>2. 값 편집</h4>
+      <table id="dataTable">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>값</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div class="apply-wrapper">
+        <button id="applyTableBtn">Apply</button>
+      </div>
+    </section>
+
+    <!-- 값 추가 -->
+    <section id="add-section">
+      <h4>3. 값 추가</h4>
+      <input type="text" id="id" placeholder="ID" />
+      <input type="text" id="newValueInput" placeholder="VALUE" />
+
+      <button id="addValueBtn">Add</button>
+    </section>
+
+    <!-- 고급 편집  -->
+    <section id="editor-section">
+      <h4>4. 값 고급 편집</h4>
+      <textarea id="jsonEditor" cols="80" rows="10"></textarea>
+      <div class="apply-wrapper">
+        <button id="applyEditorBtn">Apply</button>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
